@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background: rgb(199, 76, 76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(247, 228, 228);
+    transition: color 0.25s ease-in;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: rgb(0, 170, 113);
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: none;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    background: rgb(0, 0, 0);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+footer img:first-child {
+    width: auto;
+    height: 10vh;
+}
+
+footer ul {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(247, 228, 228);
+    transition: color 0.25s ease-in;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(0, 170, 113);
+}
+
+@media print {
+
+    footer {
+        display: flex;
+    }
+}
+
+article {
+    width: 100%;
+    height: auto;
+    background: rgb(125, 197, 255);
+    display: flex;
+}
+
+.container {
+    margin: 30px;
+    width: auto;
+}
+
+.container p {
+    font-size: 10px
+}
+
+@media screen and (max-width: 640px) {
+    article {
+        flex-direction: column;
+    }
+}

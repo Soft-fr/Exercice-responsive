@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temps {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.temps h2:after {
+    content: "°F";
+    position: absolute;
+    font-size: 15px;
+    margin-top: 0px;
+    
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h3 {
+    font-size: 15px;
+}
+
+.info span {
+    color: red;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-top: 2px solid lightgrey;
+}
+
+.day:last-child {
+    border-bottom: 2px solid lightgrey;
+}
+
+.day h2, h4 {
+    font-size: 15px;
+}
+
+.day h3 {
+    font-size: 13px;
+}
+
+.day span {
+    color: red;
+}
+
+.day-title {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.info-day h3:first-child {
+    color: red;
+}
+
+.day h3:after {
+    content: "°";
+    position: absolute;
+    font-size: 15px;
+    margin-top: 0px;
+    
+}
+
+@media screen and (min-width: 600px) {
+    .temps {
+        gap: 5%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .temps {
+        gap: 3%;
+    }
+
+    article {
+        flex-direction: row;
+    }
+
+    .day {
+        flex-direction: column;
+        border: none !important;
+    }
+
+
+    .day-title {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .info-day {
+        flex-direction: column;
+    }
+
+    .info-day img {
+        margin-bottom: 10px;
+    }
+
+    .celcus {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    body {
+        border: 2px solid lightgray;
+        margin: 30px;
+    }
+}

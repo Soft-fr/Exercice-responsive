@@ -1,0 +1,89 @@
+h2 {
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .none {
+        display: block;
+        padding: 0 2em;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    .logo:nth-child(1) {
+        justify-content: flex-start;
+    }
+
+    .logo:nth-child(2) {
+        justify-content: flex-end;
+    }
+
+    .logo img {
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    position: relative;
+    width: 40%;
+    border-radius: 50px;
+}
+
+.links {
+    text-align: center; 
+}
+
+.links a {
+    padding: 1em 3em;  
+    background: palevioletred;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background: palevioletred;
+    padding: 2em;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 0.9em
+}
+
+.card img {
+    position: relative; 
+    float: left;
+    width: 100px;
+    margin: 0 2em 0 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.p-30 {
+    padding: 2em;
+}
